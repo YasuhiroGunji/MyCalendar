@@ -1,0 +1,24 @@
+{
+  "name": "mycalendar",
+  "version": "1.0.0",
+  "description": "カレンダーアプリ",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3099 --open=src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasuhiroGunji/MyCalendar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YasuhiroGunji/MyCalendar/issues"
+  },
+  "homepage": "https://github.com/YasuhiroGunji/MyCalendar#readme",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "live-server": "^1.2.0"
+  }
+}
