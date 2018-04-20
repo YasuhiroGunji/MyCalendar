@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?lang=ja&family=Product+Sans|Roboto:400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,7 +17,11 @@
       <header class="header">
         <div class="header-content">
           <div class="header-content-left header-item">
-
+            <div class="hunberger" aria-expanded="true" aria-label="メインドロワー" role="button" tabindex="0">
+              <svg focusable="false" viewBox="0 0 24 24">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+              </svg>
+            </div>
           </div>
           <div class="header-content-center header-item">
 
@@ -28,66 +34,77 @@
       <div class="body">
         <aside class="aside">
           <div class="calendar">
-            <div class="calendar-header">
-              <span>2017年10月</span>
-              <span>&lt;</span>
-              <span>&gt;</span>
-            </div>
-            <div class="calendar-grid">
-              <div class="calendar-grid-row">
-                <span class="calendar-week">月</span>
-                <span class="calendar-week">火</span>
-                <span class="calendar-week">水</span>
-                <span class="calendar-week">木</span>
-                <span class="calendar-week">金</span>
-                <span class="calendar-week">土</span>
-                <span class="calendar-week">日</span>
+            <div class="calendar-container">
+              <div class="calendar-header">
+                <span class="calendar-ym">2017年 10月</span>
+                <span class="calendar-back">&lt;</span>
+                <span class="calendar-next">&gt;</span>
               </div>
-              <div class="calendar-grid-rowgroup">
+              <div class="calendar-grid">
                 <div class="calendar-grid-row">
-                  <div class="calendar-day">1</div>
-                  <div class="calendar-day">2</div>
-                  <div class="calendar-day">3</div>
-                  <div class="calendar-day">4</div>
-                  <div class="calendar-day">5</div>
-                  <div class="calendar-day">6</div>
-                  <div class="calendar-day">7</div>
+                  <span class="calendar-week">月</span>
+                  <span class="calendar-week">火</span>
+                  <span class="calendar-week">水</span>
+                  <span class="calendar-week">木</span>
+                  <span class="calendar-week">金</span>
+                  <span class="calendar-week">土</span>
+                  <span class="calendar-week">日</span>
                 </div>
-                <div class="calendar-grid-row">
-                  <span class="calendar-day">8</span>
-                  <span class="calendar-day">9</span>
-                  <span class="calendar-day">10</span>
-                  <span class="calendar-day">11</span>
-                  <span class="calendar-day">12</span>
-                  <span class="calendar-day">13</span>
-                  <span class="calendar-day">14</span>
-                </div>
-                <div class="calendar-grid-row">
-                  <span class="calendar-day">15</span>
-                  <span class="calendar-day">16</span>
-                  <span class="calendar-day">17</span>
-                  <span class="calendar-day">18</span>
-                  <span class="calendar-day">19</span>
-                  <span class="calendar-day">20</span>
-                  <span class="calendar-day">21</span>
-                </div>
-                <div class="calendar-grid-row">
-                  <span class="calendar-day">22</span>
-                  <span class="calendar-day">23</span>
-                  <span class="calendar-day">24</span>
-                  <span class="calendar-day">25</span>
-                  <span class="calendar-day">26</span>
-                  <span class="calendar-day">27</span>
-                  <span class="calendar-day">28</span>
-                </div>
-                <div class="calendar-grid-row">
-                  <span class="calendar-day">29</span>
-                  <span class="calendar-day">30</span>
-                  <span class="calendar-day">31</span>
-                  <span class="calendar-day">1</span>
-                  <span class="calendar-day">2</span>
-                  <span class="calendar-day">3</span>
-                  <span class="calendar-day">4</span>
+                <div class="calendar-grid-rowgroup">
+                  <div class="calendar-grid-row">
+                    <span class="calendar-day">26</span>
+                    <span class="calendar-day">27</span>
+                    <span class="calendar-day">28</span>
+                    <span class="calendar-day">29</span>
+                    <span class="calendar-day">30</span>
+                    <span class="calendar-day">31</span>
+                    <span class="calendar-day current-month">1</span>
+                  </div>
+                  <div class="calendar-grid-row">
+                    <span class="calendar-day current-month">2</span>
+                    <span class="calendar-day current-month">3</span>
+                    <span class="calendar-day current-month">4</span>
+                    <span class="calendar-day current-month">5</span>
+                    <span class="calendar-day current-month">6</span>
+                    <span class="calendar-day current-month">7</span>
+                    <span class="calendar-day current-month">8</span>
+                  </div>
+                  <div class="calendar-grid-row">
+                    <span class="calendar-day current-month">9</span>
+                    <span class="calendar-day current-month">10</span>
+                    <span class="calendar-day current-month">11</span>
+                    <span class="calendar-day current-month">12</span>
+                    <span class="calendar-day current-month">13</span>
+                    <span class="calendar-day current-month">14</span>
+                    <span class="calendar-day current-month">15</span>
+                  </div>
+                  <div class="calendar-grid-row">
+                    <span class="calendar-day current-month">16</span>
+                    <span class="calendar-day current-month">17</span>
+                    <span class="calendar-day current-month">18</span>
+                    <span class="calendar-day current-month">19</span>
+                    <span class="calendar-day current-month">20</span>
+                    <span class="calendar-day current-month">21</span>
+                    <span class="calendar-day current-month">22</span>
+                  </div>
+                  <div class="calendar-grid-row">
+                    <span class="calendar-day current-month">23</span>
+                    <span class="calendar-day current-month">24</span>
+                    <span class="calendar-day current-month">25</span>
+                    <span class="calendar-day current-month">26</span>
+                    <span class="calendar-day current-month">27</span>
+                    <span class="calendar-day current-month">28</span>
+                    <span class="calendar-day current-month">29</span>
+                  </div>
+                  <div class="calendar-grid-row">
+                    <span class="calendar-day current-month">30</span>
+                    <span class="calendar-day">1</span>
+                    <span class="calendar-day">2</span>
+                    <span class="calendar-day">3</span>
+                    <span class="calendar-day">4</span>
+                    <span class="calendar-day">5</span>
+                    <span class="calendar-day">6</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,49 +127,43 @@
                       <div class="header-row-col">
                         <h2>
                           <div class="floor">B1</div>
-                          <div class="room-name">会議室</div>
+                          <div class="room-name">16</div>
                         </h2>
                       </div>
                       <div class="header-row-col">
                         <h2>
                           <div class="floor">1F</div>
-                          <div class="room-name">会議室</div>
+                          <div class="room-name">17</div>
                         </h2>
                       </div>
                       <div class="header-row-col">
                         <h2>
                           <div class="floor">2F</div>
-                          <div class="room-name">セミナールーム</div>
+                          <div class="room-name">18</div>
                         </h2>
                       </div>
                       <div class="header-row-col">
                         <h2>
                           <div class="floor">4F</div>
-                          <div class="room-name">会議室/A</div>
+                          <div class="room-name">19</div>
                         </h2>
                       </div>
                       <div class="header-row-col">
                         <h2>
                           <div class="floor">4F</div>
-                          <div class="room-name">会議室/B</div>
+                          <div class="room-name">20</div>
                         </h2>
                       </div>
                       <div class="header-row-col">
                         <h2>
                           <div class="floor">5F</div>
-                          <div class="room-name">会議室</div>
+                          <div class="room-name">21</div>
                         </h2>
                       </div>
                       <div class="header-row-col">
                         <h2>
                           <div class="floor">(浦)10F</div>
-                          <div class="room-name">応接室</div>
-                        </h2>
-                      </div>
-                      <div class="header-row-col">
-                        <h2>
-                          <div class="floor">(浦)16F</div>
-                          <div class="room-name">会議室</div>
+                          <div class="room-name">22</div>
                         </h2>
                       </div>
                     </div>
@@ -242,11 +253,6 @@
                         <div class="mmsF1c"></div>
                         <div class="mmsF1c"></div>
                         <div class="mmsF1c"></div>
-                      </div>
-                      <div class="timecalendar-day">
-                        <div class="timecalendar-time">
-                          aaa
-                        </div>
                       </div>
                       <div class="timecalendar-day">
                         <div class="timecalendar-time">
