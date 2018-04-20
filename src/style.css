@@ -15,10 +15,6 @@ body {
   text-rendering: geometricPrecision;
   overflow: hidden;
 }
-
-
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-
 a:link, a:visited, a:hover, a:active {
   color: #d03c56;
   text-decoration: none;
